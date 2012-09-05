@@ -177,6 +177,10 @@ case "$DEVICE" in
 	flash_fastboot unlock $PROJECT
 	;;
 
+"p500")
+	flash_fastboot nounlock $PROJECT
+	;;
+
 "m4")
 	flash_fastboot unlock $PROJECT
 	;;
