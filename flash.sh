@@ -177,6 +177,9 @@ case "$DEVICE" in
 	flash_fastboot unlock $PROJECT
 	;;
 
+"grouper")
+	flash_fastboot nounlock $PROJECT
+
 "p500")
 	flash_fastboot nounlock $PROJECT
 	;;

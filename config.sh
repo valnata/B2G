@@ -65,6 +65,12 @@ case "$1" in
 	(cd device/samsung/maguro && ./download-blobs.sh)
 	;;
 
+"nexus-7")
+	echo DEVICE=grouper >> .tmp-config &&
+	repo_sync grouper &&
+	(cd device/asus/grouper && ./extract-files.sh)
+	;;
+
 "optimus-one")
 	echo DEVICE=p500 >> .tmp-config &&
 	repo_sync p500 &&
@@ -125,6 +131,7 @@ case "$1" in
 	echo Valid devices to configure are:
 	echo - galaxy-s2
 	echo - galaxy-nexus
+	echo - nexus-7
 	echo - nexus-s
 	echo - nexus-s-4g
 	echo - otoro
